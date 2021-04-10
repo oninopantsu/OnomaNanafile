@@ -1,0 +1,137 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.header__wrapper{
+  padding: 0 30px;
+  background-color: #fff;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+a h1{
+  vertical-align: middle;
+  font-size: 28px;
+}
+.drawer__nav{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  background: #fff;
+  transition: .7s;
+  text-align: center;
+}
+.drawer__nav ul{
+  background-color: #fff;
+  padding-top: 320px;
+  text-align: center;
+  width: 100%;
+}
+.drawer__nav ul li{
+  list-style-type: none;
+  padding: 30px 0;
+  font-size: 1.2rem;
+}
+.drawer__nav-item a{
+  color: blue;
+
+}
+.header__menu {
+  display: inline-block;
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.header__menu__line--top,
+.header__menu__line--middle,
+.header__menu__line--bottom {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  transition: 0.5s;
+}
+.header__menu__line--top {
+  top: 0;
+}
+.header__menu__line--middle {
+  top: 14px;
+}
+.header__menu__line--bottom {
+  bottom: 0;
+}
+.header__menu.open span:nth-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+.header__menu.open span:nth-of-type(2) {
+  opacity: 0;
+}
+.header__menu.open span:nth-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+.in{
+  transform: translateX(100%);
+}
+.header__nav, #header__nav{
+  display: none;
+}
+@media screen and (min-width:769px){
+  .drawer__nav{
+    display: none;
+  }
+  .header__wrapper-md{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__menu, #hedaer__menu{
+    display: none;
+  }
+  
+  .header__nav, #header__nav{
+    display: block;
+  }
+  .header__nav, #header__nav > ul{
+    display: flex;
+  }
+  .header__nav li{
+    padding-left: 20px;
+  }
+  .header__nav-item{
+    font-weight: bold;
+    padding-right: 20px;
+  }
+}
+/* header end */
+#firstview{
+  width: 100%;
+  height: 80vh;
+  background: url(../img/mv.png) center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
