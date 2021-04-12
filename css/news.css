@@ -125,7 +125,7 @@ a h1{
 /* firstview */
 #firstview{
   width: 100%;
-  height: 80vh;
+  height: 50vh;
   background: url(../img/mv.png) center;
   background-size: cover;
   color: #fff;
@@ -137,119 +137,14 @@ a h1{
 }
 .firstview__copy1{
   width: 80%;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.5em;
   margin: 0 auto;
   font-weight: bold;
 }
-.firstview__copy2{
-  width: 80%;
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.86);
-}
-/* firstview__end */
-
-/* feature */
-#feature{
-  width: 100%;
-  background-color: #222;
-}
-.feature__txt{
-  width: 85%;
-  margin:0 auto;
-  padding: 80px 0 80px;
-  color: #fff;
-
-}
-.feature__ttl{
-  font-size: 30px;
-  padding-bottom: 24px;
-}
-.feature__comment{
-  line-height: 1.5rem;
-  font-size: 16px;
-} 
-@media screen and (min-width:769px){
-  .feature__txt{
-  width: 1000px;
-  margin: 0 auto;
-  }
-  .feature__comment{
-    font-size: 20px;
-    line-height: 1.5rem;
-  }
-  
-}
-/* feature end */
-
-/* service */
-#service{
-  width: 100%;
-}
-.service__ttl{
-  text-align: center;
-  font-size: 30px;
-  margin: 30px 0;
-}
-.service__wrapper{
-  display: flex;
-  width: 90%;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-.service__card-item{
-  width: 90%;
-  margin: 0 auto;
-}
-.service__card-item img{
-  width: 100%;
-  align-items: center;
-}
-.service__item-ttl{
-  font-size: 1.1rem;
-  padding: 10px 0.5px;
-}
-.service__item-txt{
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding-bottom: 20px;
-}
-.service__btn{
-  padding: 50px 0;
-  text-align: center;
-}
-.service__btn a{
-  display: inline-block;
-  background-color: #cd0224;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px 60px;
-}
-.service__btn:hover{
-  opacity: 0.7;
-  transition: 0.5s;
-}
-@media screen and (min-width:769px){
-  #service{
-    width: 1080px;
-    margin: 0 auto;
-  }
-  .service__card-item {
-    width: 48%;
-    margin-top: 20px;
-    margin-right: 10px;
-  }
-  .service__card-item img{
-    width: 100%;
-  }
-}
-/* service end */
-
 /* news */
 #news{
   width: 100%;
-  background-color: #222;
 }
 .news__wrapper{
   width: 90%;
@@ -259,17 +154,7 @@ a h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 0 30px;
-}
-.news__ttl{
-  font-size: 32px;
-  color: #fff;
-}
-.news__btn a{
-  font-size: 16px;
-  background-color: #cd0224;
-  color: #fff;
-  padding: 8px 12px;
+  padding: 50px 0 30px;
 }
 .news__item{
   padding-bottom: 80px;
@@ -279,9 +164,15 @@ a h1{
   display: flex;
   margin: 10px 0;
   align-items: center;
-  
+  border: 1px solid #222;  
+  padding: 10px 0;
 }
-a:hover{
+.news__cap{
+  list-style: none;
+
+
+}
+.news__btn a, .news__cap:hover{
   opacity: 0.7;
   transition: 0.3;
 }
@@ -290,7 +181,7 @@ a:hover{
   padding-left: 10px;
 }
 .news__cap-txt{
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   padding: 20px 10px;
 
@@ -301,104 +192,13 @@ a:hover{
   margin: 0 auto;
 }
 }
-/* news end */
-/* blog */
-
-#blog{
-  width: 100%;
-}
-.blog__ttl{
-  padding: 80px 10px;
-  font-size: 30px;
-  text-align: center;
-}
-.blog__wrapper{
-  width: 90%;
-  margin: 0 auto;
-}
-.blog__card{
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-.blog__card img{
-  width: 100%;
-  text-align: center;
-}
-.blog__item-date{
-  padding-top: 20px;
+.news__cap-date{
   font-size: 16px;
-  color: rgba(88, 85, 85, 0.826);
-  
 }
-.blog__item-ttl{
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 0;
+.news__cap-txt{
+  font-size: 16px;
 }
-a:hover{
-  opacity: 0.7;
-  transition: 0.3s;
-}
-@media screen and (min-width:769px){
-  #blog{
-    width: 1080px;
-    margin: 0 auto;
-    display: block;
-  }
-  .blog__wrapper{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 30px;
-  }
-  .blog__card{
-    margin-right: 14px;
-  }
-  .blog__card:last-child{
-    margin-right: 0;
-  }
-  .blog__item-ttl{
-    padding-top: 10px;
-  }
-  
-}
-/* blog end */
-
-#common__btn{
-  width: 100%;
-}
-.common__wrapper{
-  display: flex;
-  padding: 80px 0 50px;
-}
-
-.company__btn-ttl{
-  font-size: 30px;
-  height: 30vh;
-  width: 50%;
-  background-color: #cd0224;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.recruit__btn-ttl{
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  height: 30vh;
-  width: 50%;
-  background-color: #222;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-/* common end */
+/* news end */
 
 /* contact */
 #contact{

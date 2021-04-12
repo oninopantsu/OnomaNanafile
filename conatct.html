@@ -1,14 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="css/conatct.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/reset.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>株式会社TECH</title>
 </head>
+
 <body>
-  
+<!-- header -->
+<header>
+  <div class="header__wrapper">
+    <div class="header__wrapper-md">
+      <a href="index.html" class="header-logo">
+        <h1>TECH</h1>
+      </a>
+      <nav class="header__nav" id="header__nav">
+        <ul>
+          <li class="header__nav-item"><a href="index.html">ホーム</a></li>
+          <li class="header__nav-item"><a href="service.html">事業内容</a></li>
+          <li class="header__nav-item"><a href="news.html">ニュース</a></li>
+          <li class="header__nav-item"><a href="blog.html">社員ブログ</a></li>
+          <li class="header__nav-item"><a href="company.html">会社概要</a></li>
+          <li class="header__nav-item"><a href="recruit.html">採用情報</a></li>
+          <li class="header__nav-item"><a href="conatct.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="drawer">
+      <div class="drawer__menu" id="drawer__menu">
+        <span class="drawer__menu__line--top"></span>
+        <span class="drawer__menu__line--middle"></span>
+        <span class="drawer__menu__line--bottom"></span>
+      </div>
+    </div>
+    <nav class="drawer__nav" id="drawer__nav">
+      <ul>
+        <li class="drawer__nav-item"><a href="index.html">ホーム</a></li>
+        <li class="drawer__nav-item"><a href="service.html">事業内容</a></li>
+        <li class="drawer__nav-item"><a href="news.html">ニュース</a></li>
+        <li class="drawer__nav-item"><a href="blog.html">社員ブログ</a></li>
+        <li class="drawer__nav-item"><a href="company.html">会社概要</a></li>
+        <li class="drawer__nav-item"><a href="recruit.html">採用情報</a></li>
+        <li class="drawer__nav-item"><a href="conatct.html">お問い合せ</a></li>
+      </ul>
+    </nav>
+  </div>
+
+</header>
+<!-- header end -->
+
+<main>
+
+  <div id="firstview">
+    <p class="firstview__copy">お問い合わせ</p>
+  </div>
+  <!-- firstview end -->
+
+  <!-- form -->
+<div class="form__wrapper">
+<form class="form" name="contact" method="POST">
+  <div class="form-item">
+    <label for="company" class="form__item-label">会社名</label>
+    <input type="text" name="company" class="form__item-input">
+  </div>
+  <div class="form-item">
+    <label for="name" class="form__item-label">お名前<span class="form__item-label-required">*</span></label>
+    <input type="text" name="name" class="form__item-input">
+  </div>
+  <div class="form-item">
+    <label for="email" class="form__item-label">メールアドレス<span class="form__item-label-required">*</span></label>
+    <input type="email" name="email" class="form__item-input">
+  </div>
+  <div class="form-item">
+    <label for="textarea" class="form__item-label">お問い合わせ内容<span class="form__item-label-required">*</span></label>
+    <textarea name="textarea" rows="7" cols="80" class="form__item-input"></textarea>
+  </div>
+  <div class="form__btn-section">
+  <input type="submit" class="form-btn" value="お申し込み">
+  </div>
+</form>
+</div>
+
+<!-- footer -->
+<footer id="footer">
+  <div class="footer__wrapper">
+    <small>&copy;2020 TECH inc.</small>
+    <div class="footer__nav">
+      <ul class="footer__flex-item">
+        <li class="footer__nav-item"><a href="/index.html">ホーム</a></li>
+        <li class="footer__nav-item"><a href="/service.html">事業内容</a></li>
+        <li class="footer__nav-item"><a href="/news.html">ニュース</a></li>
+        <li class="footer__nav-item"><a href="/blog.html">社員ブログ</a></li>
+        <li class="footer__nav-item"><a href="/company.html">会社概要</a></li>
+        <li class="footer__nav-item"><a href="/recruit.html">採用情報</a></li>
+        <li class="footer__nav-item"><a href="/conatct.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+</main>
 </body>
 </html>

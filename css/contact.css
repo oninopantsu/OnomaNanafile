@@ -142,78 +142,60 @@ a h1{
   margin: 0 auto;
   font-weight: bold;
 }
-#company{
-  width: 100%;
-  margin: 0 auto;
-}
+/* firstview end */
 
-.company__item{
-  padding: 100px 0;
-  font-size: 18px;
-  width: 90%;
-  margin: 0 auto;
-}
-table, table > tbody {
+/* form */
+.form__wrapper{
   width: 100%;
 }
-th{
-  width: 30%;
-  line-height: 4rem;
+.form{
+  padding: 50px 0 50px;
+  width: 80%;
+  margin: 0 auto;
 }
-tr > th, tr > td{
-  border-top: 1px solid #222;
+.form-item{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
 }
-tr > th, tr > td:last-child{
-  border-bottom: 1px solid #222;
+.form__item-label{
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
 }
-@media screen and (min-width:769px) {
-  #company{
-    width: 100%;
-  }
-  .company__item{
-    width: 1080px;
-    margin: 0 auto;
-  }
+.form__item-input{
+  border:1px solid rgb(196, 190, 190);
+  line-height: 1.5rem;
+}
+.form__btn-section{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.form-btn{
+  margin: 20px 0 30px;
+  padding: 10px 0;
+  width: 300px;
+  background-color: #222;
+  color: #fff;
+  font-weight: bold;
+}
+.form__item-label-required{
+  color: red;
+  margin: 0 5px;
+}
+@media screen and (min-width:769px){
+.form__wrapper{
+  width: 100%;
+}
+.form{
+  width: 1080px;
+  margin: 0 auto;
+}
   
 }
-/* contact */
-#contact{
-  width: 100%;
-  text-align: center;
-  background-color: rgba(237, 231, 231, 0.381);
-}
-.contact__wrapper{
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 50px;
-}
-.contact-ttl{
-  font-size: 30px;
-  font-weight: bold;
-  padding: 80px 0 20px;
-}
-.contact__txt{
-  font-size: 18px;
-  line-height: 2rem;
-  text-align: center;
-  padding: 20px 0;
-}
-.contact__btn{
-  padding: 50px 0;
-  display: inline-block;
-}
-.contact__btn:hover{
-  opacity: 0.7;
-  transition: 0.3s;
-}
-.contact__btn a{
-  background-color: #cd0224;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px 80px;
-}
-/* contact end */
+/* form end */
+
 /* footer */
 #footer{
 
@@ -271,5 +253,3 @@ tr > th, tr > td:last-child{
 }
 
 }
-
-
